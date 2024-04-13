@@ -6,9 +6,9 @@ import 'package:flutterfirebase/firebase_options.dart';
 import 'package:flutterfirebase/movieListscreens.dart';
 
  Future<void> main() async{
-    await Firebase.initializeApp(
-      options: DefaultFirebaseOptions.currentPlatform,
-   );
+   // await Firebase.initializeApp(
+   //    options: DefaultFirebaseOptions.currentPlatform,
+   // );
   runApp(const Movies());
 }
 
