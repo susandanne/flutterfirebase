@@ -6,9 +6,10 @@ import 'package:flutterfirebase/firebase_options.dart';
 import 'package:flutterfirebase/movieListscreens.dart';
 
  Future<void> main() async{
-   // await Firebase.initializeApp(
-   //    options: DefaultFirebaseOptions.currentPlatform,
-   // );
+   WidgetsFlutterBinding.ensureInitialized();
+   await Firebase.initializeApp(
+      options: DefaultFirebaseOptions.currentPlatform,
+   );
   runApp(const Movies());
 }
 
@@ -24,8 +25,8 @@ class Movies extends StatelessWidget {
       // colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
       //   useMaterial3: true,
       ),
-      home:const movieList(
-      ),
+      home:const movieList(),
+
     );
   }
 }
