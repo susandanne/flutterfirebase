@@ -3,6 +3,7 @@ import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutterfirebase/firebase_options.dart';
+import 'package:flutterfirebase/google_map_screen.dart';
 import 'package:flutterfirebase/movieListscreens.dart';
 
  Future<void> main() async{
@@ -25,7 +26,7 @@ class Movies extends StatelessWidget {
       // colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
       //   useMaterial3: true,
       ),
-      home:const movieList(),
+      home:const googleMap()
 
     );
   }

@@ -22,8 +22,8 @@ class _movieListState extends State<movieList> {
   void getMovielistData()async{
     await db.collection("movies").get().then((event) {
       for (var doc in event.docs) {
-         print("${doc.id} => ${doc.data()}");
-        _mlist.clear();
+         // print("${doc.id} => ${doc.data()}");
+        // _mlist.clear();
         _mlist.add(movie.fromjson(doc.id, doc.data()as Map<String,dynamic>));
       }
     });
